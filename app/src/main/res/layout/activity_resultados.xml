@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".Resultados">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/votacion"
+        android:text="Resultado de las votaciones"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_bar1"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="16dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_track"
+        app:layout_constraintTop_toBottomOf="@id/votacion"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/nayib"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@id/percent1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/votacion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/percent1"
+        android:text="0%"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/votacion"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_bar2"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_track"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/gerson"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@id/percent2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/percent2"
+        android:text="0%"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_bar3"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_track"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/maduro"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@id/percent3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/percent3"
+        android:text="0%"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar2"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seek_bar4"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_track"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/norman"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@id/percent4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/percent4"
+        android:text="0%"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
